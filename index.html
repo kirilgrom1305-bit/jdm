@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Неоновый адаптивный сайт о JDM-культуре, японских спорткарах, тюнинге и ночном дрифте.">
+  <title>Neo JDM Tokyo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Основная навигация">
+      <a class="logo" href="#top" aria-label="Neo JDM Tokyo home">
+        <span class="logo-mark">侍</span>
+        <span>Neo<span>JDM</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#cars">Авто</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#culture">Культура</a></li>
+        <li><a href="#facts">Факты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Tokyo midnight • Drift spirit • JDM legacy</p>
+          <h1 id="hero-title">Ночной Токио в ритме японских спорткаров</h1>
+          <p class="hero-text">Погрузись в культуру JDM: неоновые улицы, турбо-моторы, widebody-тюнинг и дрифт, где каждая машина становится характером.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#cars">Смотреть легенды</a>
+            <a class="btn btn-ghost" href="#culture">О культуре</a>
+          </div>
+        </div>
+
+        <article class="hero-card glass reveal" aria-label="Избранный автомобиль">
+          <div class="hero-card-image">
+            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1200&q=85" alt="Японский спорткар ночью на городской улице">
+          </div>
+          <div class="hero-card-body">
+            <span class="badge">Featured build</span>
+            <h2>Nissan Skyline GT-R</h2>
+            <p>RB26DETT • AWD • 9000 rpm mood</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cars" id="cars" aria-labelledby="cars-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Legend garage</p>
+          <h2 id="cars-title">Популярные японские автомобили</h2>
+          <p>Иконы JDM-сцены, которые сформировали эстетику уличного тюнинга и автоспорта.</p>
+        </div>
+
+        <div class="carousel reveal" aria-label="Карусель японских автомобилей">
+          <button class="carousel-btn prev" type="button" aria-label="Предыдущий автомобиль">‹</button>
+          <div class="carousel-track">
+            <article class="car-card glass is-active">
+              <img src="https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?auto=format&fit=crop&w=900&q=85" alt="Nissan Skyline GT-R R34">
+              <div>
+                <span class="badge">R34</span>
+                <h3>Nissan Skyline GT-R</h3>
+                <p>Легендарный RB26, полный привод ATTESA и культовый статус улиц Йокогамы.</p>
+              </div>
+            </article>
+            <article class="car-card glass">
+              <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=900&q=85" alt="Toyota Supra MK4">
+              <div>
+                <span class="badge">A80</span>
+                <h3>Toyota Supra MK4</h3>
+                <p>2JZ-GTE, огромный потенциал тюнинга и чистая философия гран-туризмо.</p>
+              </div>
+            </article>
+            <article class="car-card glass">
+              <img src="https://images.unsplash.com/photo-1632245889029-e406faaa34cd?auto=format&fit=crop&w=900&q=85" alt="Mazda RX-7 FD">
+              <div>
+                <span class="badge">FD3S</span>
+                <h3>Mazda RX-7</h3>
+                <p>Роторный 13B, легкая посадка и силуэт, созданный для горных серпантинов.</p>
+              </div>
+            </article>
+            <article class="car-card glass">
+              <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&w=900&q=85" alt="Honda NSX">
+              <div>
+                <span class="badge">NA1</span>
+                <h3>Honda NSX</h3>
+                <p>Среднемоторная точность, алюминиевый кузов и инженерная эстетика Honda.</p>
+              </div>
+            </article>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Следующий автомобиль">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Neon frames</p>
+          <h2 id="gallery-title">Галерея автомобилей</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85" alt="Спортивный автомобиль в городе"><figcaption>Street glow</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=900&q=85" alt="Спорткар на ночной дороге"><figcaption>Night run</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=85" alt="Красный спортивный автомобиль"><figcaption>Redline</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=85" alt="Черный спортивный автомобиль"><figcaption>Shadow spec</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=85" alt="Автомобиль в движении"><figcaption>Motion blur</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1555353540-64580b51c258?auto=format&fit=crop&w=900&q=85" alt="Тюнингованный автомобиль"><figcaption>Wide stance</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section culture" id="culture" aria-labelledby="culture-title">
+      <div class="container culture-grid">
+        <div class="culture-copy reveal">
+          <p class="eyebrow">JDM culture</p>
+          <h2 id="culture-title">Больше, чем автомобили</h2>
+          <p>JDM — это уважение к инженерии, ночные встречи на парковках, аккуратный stance, звук турбины под эстакадами и дрифт как способ говорить с дорогой.</p>
+          <ul class="culture-list">
+            <li>Kanjo и touge-заезды на пределе концентрации</li>
+            <li>Тюнинг с балансом мощности, управляемости и стиля</li>
+            <li>Комьюнити, где каждая деталь имеет историю</li>
+          </ul>
+        </div>
+        <div class="culture-panel glass reveal">
+          <span class="japanese-text">東京 夜 走り</span>
+          <h3>Tokyo after dark</h3>
+          <p>Глубокий черный фон, отражения неона, стеклянные карточки и мягкие glow-эффекты создают премиальную атмосферу ночного мегаполиса.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section facts" id="facts" aria-labelledby="facts-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Numbers</p>
+          <h2 id="facts-title">Статистика и факты</h2>
+        </div>
+        <div class="facts-grid">
+          <article class="fact-card glass reveal"><strong data-count="280">0</strong><span>км/ч — скорость легендарных японских спорткаров</span></article>
+          <article class="fact-card glass reveal"><strong data-count="1000">0</strong><span>+ л.с. выдерживают культовые тюнинг-платформы</span></article>
+          <article class="fact-card glass reveal"><strong data-count="90">0</strong><span>-е — золотая эпоха JDM-икон</span></article>
+          <article class="fact-card glass reveal"><strong data-count="24">0</strong><span>/7 — ночная энергия уличной сцены</span></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <a class="logo" href="#top"><span class="logo-mark">侍</span><span>Neo<span>JDM</span></span></a>
+      <p>Premium neon experience for Japanese car lovers.</p>
+      <div class="socials" aria-label="Социальные ссылки">
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Вернуться наверх">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
