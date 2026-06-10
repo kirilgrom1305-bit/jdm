@@ -3,264 +3,231 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Premium Guitar — современный адаптивный сайт об электрогитарах, акустике и гитарной культуре.">
-  <title>Premium Guitar Studio</title>
+  <meta name="description" content="JDM Garage — премиальный лендинг о японских спорткарах, ночном Токио, дрифте и культуре JDM.">
+  <title>JDM Garage — легенды японских дорог</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Orbitron:wght@600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page-glow" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
 
-  <header class="site-header" id="top">
+  <header class="site-header" id="home">
     <nav class="navbar container" aria-label="Основная навигация">
-      <a class="logo" href="#top" aria-label="Premium Guitar Studio">
-        <span class="logo-mark">♪</span>
-        <span>Premium<span>Guitar</span></span>
+      <a class="logo" href="#home" aria-label="JDM Garage">
+        <span class="logo-kanji" aria-hidden="true">疾</span>
+        <span class="logo-text">JDM <strong>Garage</strong></span>
       </a>
 
-      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Открыть меню">
+      <label class="burger" for="nav-toggle" aria-hidden="true">
         <span></span>
         <span></span>
         <span></span>
-      </button>
+      </label>
 
       <ul class="nav-links">
-        <li><a href="#models">Модели</a></li>
-        <li><a href="#categories">Категории</a></li>
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#cars">Автомобили</a></li>
         <li><a href="#gallery">Галерея</a></li>
-        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#culture">О нас</a></li>
+        <li><a href="#contacts">Контакты</a></li>
       </ul>
 
-      <a class="catalog-btn" href="#models">Каталог</a>
+      <a class="header-cta" href="#culture">Подробнее</a>
     </nav>
   </header>
 
   <main>
     <section class="hero section" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-content reveal">
-          <p class="eyebrow">Electric • Acoustic • Bass culture</p>
-          <h1 id="hero-title">Почувствуй музыку</h1>
-          <p class="hero-text">Открой премиальный мир гитар: от тёплого акустического тембра до агрессивного драйва электрогитары. Инструменты, которые вдохновляют звучать смелее.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#models">Выбрать гитару</a>
-            <a class="btn btn-ghost" href="#gallery">Смотреть галерею</a>
+      <div class="hero-background" aria-hidden="true"></div>
+      <div class="hero-grid container">
+        <div class="hero-content reveal-up">
+          <p class="eyebrow"><span>Tokyo midnight</span> • Drift heritage • Neon speed</p>
+          <h1 id="hero-title">Легенды японских дорог</h1>
+          <p class="hero-lead">Погрузись в культуру JDM: ночные экспрессы Токио, неоновый асфальт, турбо-свист и спорткары, ставшие символами свободы, скорости и инженерной дерзости.</p>
+          <div class="hero-actions" aria-label="Быстрые действия">
+            <a class="btn btn-primary" href="#cars">Смотреть автомобили</a>
+            <a class="btn btn-secondary" href="#gallery">Открыть галерею</a>
           </div>
         </div>
 
-        <article class="hero-card glass reveal" aria-label="Премиальная гитара месяца">
-          <div class="hero-card-image">
-            <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1200&q=85" alt="Электрогитара в студии с тёплой подсветкой">
+        <aside class="hero-panel glass reveal-up" aria-label="Профиль ночной сборки">
+          <div class="panel-topline">
+            <span class="status-dot"></span>
+            <span>Night Run Spec</span>
           </div>
-          <div class="hero-card-body">
-            <span class="badge">Signature tone</span>
-            <h2>Aurora Eclipse HH</h2>
-            <p>Mahogany body • Coil split • Stage ready</p>
+          <h2>R34 Skyline GT-R</h2>
+          <p>RB26DETT, ATTESA E-TS, карбоновый aero-kit и характер, созданный для улиц, трека и легенд.</p>
+          <div class="telemetry-grid">
+            <div>
+              <strong>2.6L</strong>
+              <span>Twin Turbo</span>
+            </div>
+            <div>
+              <strong>AWD</strong>
+              <span>Grip Mode</span>
+            </div>
+            <div>
+              <strong>夜</strong>
+              <span>Tokyo Run</span>
+            </div>
           </div>
-        </article>
+        </aside>
       </div>
     </section>
 
-    <section class="section stats" id="stats" aria-label="Статистика магазина">
-      <div class="container stats-grid glass reveal">
-        <div class="stat-item">
-          <strong><span data-count="1200">0</span>+</strong>
-          <span>гитар в каталоге</span>
-        </div>
-        <div class="stat-item">
-          <strong><span data-count="14">0</span></strong>
-          <span>лет экспертизы</span>
-        </div>
-        <div class="stat-item">
-          <strong><span data-count="98">0</span>%</strong>
-          <span>довольных клиентов</span>
-        </div>
-        <div class="stat-item">
-          <strong><span data-count="48">0</span>ч</strong>
-          <span>средняя доставка</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section models" id="models" aria-labelledby="models-title">
+    <section class="section cars" id="cars" aria-labelledby="cars-title">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Popular models</p>
-          <h2 id="models-title">Популярные модели</h2>
-          <p>Подборка гитар с выразительным характером, премиальной отделкой и надёжной сценической эргономикой.</p>
+        <div class="section-heading reveal-up">
+          <p class="eyebrow">Iconic machines</p>
+          <h2 id="cars-title">Популярные автомобили</h2>
+          <p>Четыре японские легенды, которые сформировали язык JDM-культуры: от рядных турбо-шестёрок до роторного визга и среднемоторной точности.</p>
         </div>
 
-        <div class="models-grid">
-          <article class="model-card glass reveal">
-            <div class="model-image">
-              <img src="https://images.unsplash.com/photo-1550291652-6ea9114a47b1?auto=format&fit=crop&w=900&q=85" alt="Красная электрогитара крупным планом">
-            </div>
-            <div class="model-body">
-              <span class="badge">Electric</span>
-              <h3>Crimson Vector ST</h3>
-              <p>Универсальный сингл-тон, лёгкий корпус и яркий сустейн для фанка, инди и рока.</p>
-              <strong class="price">129 900 ₽</strong>
+        <div class="cars-grid">
+          <article class="car-card glass reveal-up">
+            <figure class="car-media">
+              <img src="https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?auto=format&fit=crop&w=1000&q=85" alt="Nissan Skyline GT-R R34 на ночной улице">
+            </figure>
+            <div class="car-body">
+              <span class="badge">Godzilla</span>
+              <h3>Nissan Skyline GT-R R34</h3>
+              <p>Технологичный символ конца 90-х с продвинутым полным приводом, агрессивной аэродинамикой и культовым RB26DETT.</p>
+              <ul class="spec-list">
+                <li><span>Двигатель</span><strong>RB26DETT</strong></li>
+                <li><span>Привод</span><strong>AWD</strong></li>
+                <li><span>Дух</span><strong>Track & Street</strong></li>
+              </ul>
             </div>
           </article>
 
-          <article class="model-card glass reveal">
-            <div class="model-image">
-              <img src="https://images.unsplash.com/photo-1525201548942-d8732f6617a0?auto=format&fit=crop&w=900&q=85" alt="Акустическая гитара на тёмном фоне">
+          <article class="car-card glass reveal-up">
+            <figure class="car-media">
+              <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&w=1000&q=85" alt="Toyota Supra MK4 в городском окружении">
+            </figure>
+            <div class="car-body">
+              <span class="badge">2JZ legend</span>
+              <h3>Toyota Supra MK4</h3>
+              <p>Купе с огромным тюнинг-потенциалом, плавным силуэтом и мотором, который стал эталоном прочности.</p>
+              <ul class="spec-list">
+                <li><span>Двигатель</span><strong>2JZ-GTE</strong></li>
+                <li><span>Привод</span><strong>RWD</strong></li>
+                <li><span>Дух</span><strong>Highway Hero</strong></li>
+              </ul>
             </div>
-            <div class="model-body">
-              <span class="badge">Acoustic</span>
-              <h3>Amber Folk Pro</h3>
-              <p>Тёплый кедровый верх, глубокий корпус и мягкая динамика для авторских выступлений.</p>
-              <strong class="price">84 500 ₽</strong>
+          </article>
+
+          <article class="car-card glass reveal-up">
+            <figure class="car-media">
+              <img src="https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?auto=format&fit=crop&w=1000&q=85" alt="Mazda RX-7 с низким спортивным силуэтом">
+            </figure>
+            <div class="car-body">
+              <span class="badge">Rotary soul</span>
+              <h3>Mazda RX-7</h3>
+              <p>Лёгкая, эмоциональная и точная машина с роторным сердцем, созданная для поворотов, баланса и дрифта.</p>
+              <ul class="spec-list">
+                <li><span>Двигатель</span><strong>13B-REW</strong></li>
+                <li><span>Привод</span><strong>RWD</strong></li>
+                <li><span>Дух</span><strong>Drift Flow</strong></li>
+              </ul>
             </div>
           </article>
 
-          <article class="model-card glass reveal">
-            <div class="model-image">
-              <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=900&q=85" alt="Чёрная бас-гитара на сцене">
-            </div>
-            <div class="model-body">
-              <span class="badge">Bass</span>
-              <h3>Violet Thunder Bass</h3>
-              <p>Активная электроника, плотный низ и удобный гриф для грува, соула и современного метала.</p>
-              <strong class="price">112 000 ₽</strong>
+          <article class="car-card glass reveal-up">
+            <figure class="car-media">
+              <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1000&q=85" alt="Honda NSX на тёмном фоне">
+            </figure>
+            <div class="car-body">
+              <span class="badge">Precision</span>
+              <h3>Honda NSX</h3>
+              <p>Суперкар с инженерной философией Honda: алюминиевый кузов, среднемоторная архитектура и хирургическая управляемость.</p>
+              <ul class="spec-list">
+                <li><span>Двигатель</span><strong>C30A V6</strong></li>
+                <li><span>Привод</span><strong>RWD</strong></li>
+                <li><span>Дух</span><strong>Samurai Grip</strong></li>
+              </ul>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section categories" id="categories" aria-labelledby="categories-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Find your sound</p>
-          <h2 id="categories-title">Категории</h2>
-          <p>Выбери инструмент под свой стиль, технику и сценический образ.</p>
-        </div>
-
-        <div class="category-grid">
-          <a class="category-card glass reveal" href="#models">
-            <span class="category-icon">⚡</span>
-            <h3>Электрогитары</h3>
-            <p>От винтажного блюза до хай-гейн риффов.</p>
-          </a>
-          <a class="category-card glass reveal" href="#models">
-            <span class="category-icon">◎</span>
-            <h3>Акустические</h3>
-            <p>Честный древесный тембр для студии и сцены.</p>
-          </a>
-          <a class="category-card glass reveal" href="#models">
-            <span class="category-icon">♬</span>
-            <h3>Бас-гитары</h3>
-            <p>Фундаментальный грув и мощный низкий спектр.</p>
-          </a>
-          <a class="category-card glass reveal" href="#models">
-            <span class="category-icon">◇</span>
-            <h3>Классические</h3>
-            <p>Нейлоновые струны, мягкая атака и чистая школа.</p>
-          </a>
         </div>
       </div>
     </section>
 
     <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Visual tone</p>
-          <h2 id="gallery-title">Галерея</h2>
-          <p>Атмосфера мастерской, концертного света и деталей, которые делают инструмент предметом желания.</p>
+        <div class="section-heading reveal-up">
+          <p class="eyebrow">Neon gallery</p>
+          <h2 id="gallery-title">Галерея ночного драйва</h2>
+          <p>Кадры, где металл, дождь, свет вывесок и скорость превращаются в визуальный язык японской автомобильной сцены.</p>
         </div>
 
         <div class="gallery-grid">
-          <figure class="gallery-item tall reveal">
-            <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&w=900&q=85" alt="Гитарист на концерте в лучах света">
-            <figcaption>Live energy</figcaption>
+          <figure class="gallery-item gallery-wide reveal-up">
+            <img src="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=1200&q=85" alt="Спорткар на ночной дороге с неоновой подсветкой">
+            <figcaption>Midnight express</figcaption>
           </figure>
-          <figure class="gallery-item reveal">
-            <img src="https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?auto=format&fit=crop&w=900&q=85" alt="Детали электрогитары крупным планом">
-            <figcaption>Fine details</figcaption>
+          <figure class="gallery-item reveal-up">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=85" alt="Передняя часть спортивного автомобиля">
+            <figcaption>Street stance</figcaption>
           </figure>
-          <figure class="gallery-item reveal">
-            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=85" alt="Музыкальная студия с гитарами">
-            <figcaption>Studio mood</figcaption>
+          <figure class="gallery-item reveal-up">
+            <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=85" alt="Спорткар на закатной дороге">
+            <figcaption>Coastal run</figcaption>
           </figure>
-          <figure class="gallery-item wide reveal">
-            <img src="https://images.unsplash.com/photo-1461784180009-27c1303a08a7?auto=format&fit=crop&w=1200&q=85" alt="Гитары на стене музыкального магазина">
-            <figcaption>Premium wall</figcaption>
+          <figure class="gallery-item reveal-up">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=900&q=85" alt="Деталь премиального спортивного автомобиля">
+            <figcaption>Aero detail</figcaption>
+          </figure>
+          <figure class="gallery-item gallery-tall reveal-up">
+            <img src="https://images.unsplash.com/photo-1511994477422-b69e44bd4ea9?auto=format&fit=crop&w=900&q=85" alt="Ночная городская улица с движущимся автомобилем">
+            <figcaption>Tokyo blur</figcaption>
+          </figure>
+          <figure class="gallery-item reveal-up">
+            <img src="https://images.unsplash.com/photo-1541443131876-44b03de101c5?auto=format&fit=crop&w=900&q=85" alt="Автомобильные фары в темноте">
+            <figcaption>Neon eyes</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <section class="section advantages" id="advantages" aria-labelledby="advantages-title">
-      <div class="container advantages-grid">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Why us</p>
-          <h2 id="advantages-title">Почему выбирают нас</h2>
-          <p>Мы соединяем эстетику бутикового салона, экспертный подбор и сервис, который понимает музыкантов.</p>
+    <section class="section culture" id="culture" aria-labelledby="culture-title">
+      <div class="container culture-grid">
+        <div class="culture-copy glass reveal-up">
+          <p class="eyebrow">JDM culture</p>
+          <h2 id="culture-title">О JDM-культуре</h2>
+          <p>JDM — это не только автомобили для внутреннего рынка Японии. Это целая эстетика: уважение к инженерии, бесконечный тюнинг, ночные встречи на парковках, горные серпантины, кольцевые треки и дрифт как форма самовыражения.</p>
+          <p>С 90-х годов японские спорткары стали глобальными иконами благодаря надёжным моторам, лёгким кузовам и сцене энтузиастов, где каждый проект отражает характер владельца.</p>
+          <blockquote>«真夜中の道 — это место, где машина перестаёт быть транспортом и становится продолжением человека.»</blockquote>
         </div>
 
-        <div class="advantage-list">
-          <article class="advantage-card glass reveal">
-            <span>✓</span>
-            <div>
-              <h3>Гарантия качества</h3>
-              <p>Каждая гитара проходит настройку мензуры, высоты струн и электроники перед отправкой.</p>
-            </div>
-          </article>
-          <article class="advantage-card glass reveal">
-            <span>↗</span>
-            <div>
-              <h3>Быстрая доставка</h3>
-              <p>Надёжная упаковка, страхование и оперативная логистика по всей стране.</p>
-            </div>
-          </article>
-          <article class="advantage-card glass reveal">
-            <span>★</span>
-            <div>
-              <h3>Поддержка музыкантов</h3>
-              <p>Помогаем подобрать инструмент, педали, струны и сетап под жанр и технику.</p>
-            </div>
-          </article>
+        <div class="culture-card reveal-up" aria-label="Декоративная карточка JDM">
+          <span class="vertical-kanji" aria-hidden="true">日本車</span>
+          <div class="speed-ring">
+            <span>9000</span>
+            <small>RPM</small>
+          </div>
+          <p>Neon. Turbo. Drift. Heritage.</p>
         </div>
       </div>
     </section>
 
-    <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Players say</p>
-          <h2 id="reviews-title">Отзывы клиентов</h2>
-        </div>
-
-        <div class="review-slider glass reveal" aria-roledescription="carousel" aria-label="Отзывы покупателей">
-          <div class="review-track">
-            <article class="review-slide is-active">
-              <p>«Взял электрогитару для тура — сетап идеальный прямо из коробки. Звук плотный, внешний вид просто космос.»</p>
-              <h3>Артём К.</h3>
-              <span>Session guitarist</span>
-            </article>
-            <article class="review-slide">
-              <p>«Помогли выбрать акустику под голос. Доставка заняла два дня, упаковка безупречная, инструмент строит идеально.»</p>
-              <h3>Мария Л.</h3>
-              <span>Singer-songwriter</span>
-            </article>
-            <article class="review-slide">
-              <p>«Редко встречаешь магазин, где говорят не только о брендах, но и о реальном звучании в миксе. Очень профессионально.»</p>
-              <h3>Денис Р.</h3>
-              <span>Producer</span>
-            </article>
-          </div>
-
-          <div class="review-controls">
-            <button class="review-btn prev" type="button" aria-label="Предыдущий отзыв">‹</button>
-            <div class="review-dots" aria-label="Навигация по отзывам"></div>
-            <button class="review-btn next" type="button" aria-label="Следующий отзыв">›</button>
-          </div>
-        </div>
+    <section class="section stats" aria-label="Статистика JDM Garage">
+      <div class="container stats-grid glass reveal-up">
+        <article class="stat-item">
+          <strong>500+</strong>
+          <span>моделей в истории JDM</span>
+        </article>
+        <article class="stat-item">
+          <strong>30</strong>
+          <span>лет культовой эпохи</span>
+        </article>
+        <article class="stat-item">
+          <strong>∞</strong>
+          <span>поклонников по всему миру</span>
+        </article>
       </div>
     </section>
   </main>
@@ -268,31 +235,31 @@
   <footer class="footer" id="contacts">
     <div class="container footer-grid">
       <div>
-        <a class="logo" href="#top" aria-label="Premium Guitar Studio">
-          <span class="logo-mark">♪</span>
-          <span>Premium<span>Guitar</span></span>
+        <a class="logo footer-logo" href="#home" aria-label="JDM Garage">
+          <span class="logo-kanji" aria-hidden="true">疾</span>
+          <span class="logo-text">JDM <strong>Garage</strong></span>
         </a>
-        <p>Премиальный бутик гитар, аксессуаров и вдохновения для музыкантов.</p>
+        <p>Премиальный гид по японским спорткарам, дрифту и ночной автомобильной культуре.</p>
       </div>
-      <div>
-        <h3>Контакты</h3>
-        <p>Москва, ул. Музыкальная, 12</p>
-        <p><a href="tel:+74951234567">+7 495 123-45-67</a></p>
-        <p><a href="mailto:hello@premium-guitar.ru">hello@premium-guitar.ru</a></p>
-      </div>
-      <div>
-        <h3>Социальные сети</h3>
-        <div class="socials">
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <a href="#" aria-label="YouTube">YouTube</a>
-          <a href="#" aria-label="Telegram">Telegram</a>
-        </div>
+
+      <address class="footer-contacts">
+        <h2>Контакты</h2>
+        <a href="mailto:hello@jdmgarage.example">hello@jdmgarage.example</a>
+        <a href="tel:+79990000000">+7 999 000-00-00</a>
+        <span>Tokyo mood • Worldwide community</span>
+      </address>
+
+      <div class="socials" aria-label="Социальные сети">
+        <h2>Социальные сети</h2>
+        <a href="#home">Instagram</a>
+        <a href="#home">YouTube</a>
+        <a href="#home">Telegram</a>
       </div>
     </div>
-    <div class="container copyright">© 2026 Premium Guitar Studio. Все права защищены.</div>
+    <div class="container footer-bottom">
+      <span>© 2026 JDM Garage. Все права защищены.</span>
+      <span>Designed for night runners.</span>
+    </div>
   </footer>
-
-  <button class="back-to-top" type="button" aria-label="Наверх">↑</button>
-  <script src="script.js"></script>
 </body>
 </html>
